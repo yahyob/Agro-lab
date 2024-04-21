@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="" lang="az">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Agro</title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/css/flickity.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/sign-up.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/">
+</head>
+
+<body class="font-inter antialiased bg-slate-100 text-slate-600">
+
+    <script>
+        if (localStorage.getItem('sidebar-expanded') == 'true') {
+            document.querySelector('body').classList.add('sidebar-expanded');
+        } else {
+            document.querySelector('body').classList.remove('sidebar-expanded');
+        }
+    </script>
+
+    <div class="row w-100">
+        <div class="col-12  col-sm-12 col-md-12 col-lg-6">
+            <div class="row sign-in__row ">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 sign-img  ">
+                   <a href="/index.html">
+                    <img class="img-fluid" src="/img/logo.png" alt="">
+                   </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6  s-h-h ">
+                    <div class="form2">
+                        <div class="respon-div">
+                            <h2 style="font-weight: bold;">Xush kelibsiz ✨</h2>
+                            <!-- Form -->
+                            <form action="" method="post" id="sign-up">
+                                <div >
+                                    <div>
+                                        <label class="block text-sm font-medium mb-1" for="name">Ism</label>
+                                        
+                                    </div>
+                                    <div>
+                                        <input id="name" name="name" class="form-input w-full" type="text" required>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium mb-1" for="surname">Familya</label>
+                                        
+                                    </div>
+                                    <div>
+                                        <input id="surname" name="surname" class="form-input w-full" type="text" required>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium mb-1" for="phone">Telefon</label>
+                                        
+                                    </div>
+                                    <div>
+                                        <input id="phone" name="phone" class="form-input w-full" type="text" required>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium mb-1" for="email">E-pochta manzili</label>
+                                        
+                                    </div>
+                                    <div>
+                                        <input id="email" name="email" class="form-input w-full" type="email" required>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium mb-1" for="password">Parol</label>
+                                        
+                                    </div>
+                                    <div>
+                                        <input id="password" name="password" class="form-input w-full" type="password" autocomplete="on" required>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium mb-1" for="repeat_password">Parolni qayta kiriting</label>
+                                        
+                                    </div>
+                                    <div>
+                                        <input id="repeat_password" name="repeat_password" class="form-input w-full" type="password" autocomplete="on" required>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <label class="flex items-center">
+                                        <input name="agreement" type="checkbox" class="form-checkbox" required>
+                                        <span class="text-sm ml-2">Foydalanish shartlariga roziman</span>
+                                    </label>
+                                </div>
+                                <div class="d-flex justify-content-end  mt-2 ">                              
+                                    <button class="btn  btn-primary ">Kirish</button>
+                                </div>
+    
+                            </form>
+                            <!-- Footer -->
+                            <div class="pt-3 border-t border-slate-200">
+                            <div class="text-sm">
+                                Hisobingiz bormi? 
+                                <a class="font-medium text-indigo-500 hover:text-indigo-600" href="/sign-in.html">
+                                    Roʻyxatdan oʻtish</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 form s-h-1">
+                    <img  src="/img/auth-decoration.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-0 s-h-1">
+            <img class="img-fluid sign-col-img " src="/img/sign-in-bg.jpg" alt="">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/assets/7df0d005/yii.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/js/flickity.pkgd.min.js"></script>
+    <script src="/js/jquery.inputmask.bundle.js"></script>
+    <script src="/js/inputDropDown.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</body>
+
+</html>
