@@ -409,7 +409,8 @@ header {
 
 footer {
     background-image: url(../img/bg-footer.jpg);
-    padding: 40px 0 70px
+    padding: 40px 0 70px;
+    padding-bottom: 20px;
 }
 
 footer .container-fluid {
@@ -1888,7 +1889,7 @@ img#arrowSelectBox0 {
     margin-bottom: 30px;
 }
 
-@media (min-width: 1199px){
+@media (min-width: 1299px){
     header .col-lg-7 {
         flex: 100%;
         max-width: 100%;
@@ -1909,7 +1910,9 @@ img#arrowSelectBox0 {
 	/*header nav ul {
 	    justify-content: space-between;
 	}*/
-
+    .number .mail {
+        font-size: 10px;
+    }
 	header nav ul li {
 	    margin-right: 15px;
 	}
@@ -1967,118 +1970,9 @@ img#arrowSelectBox0 {
         margin-top: 65px
     }
 }
-
-@media (max-width:1440px) {
-	header .container-fluid {
-	    padding: 0 30px;
-	}
-    .tab-pane {
-        padding-right: 100px
-    }
-    .tabItem .nav-link {
-        padding-left: 100px
-    }
-    .news-open .mainItem .title h2 {
-        font-size: 24px
-    }
-    .news-open .mainItem .desc p {
-        font-size: 17px
-    }
-    .catUl li p {
-        font-size: 14px
-    }
-    .tagsUl li a {
-        font-size: 14px;
-        padding: 10px 25px 10px 20px
-    }
-    .commentsItem .comment p {
-        font-size: 16px
-    }
-    .news-open.allSection .aboutCol {
-        padding: 25px
-    }
-    .blog.allSection .aboutCol {
-        padding: 40px
-    }
-    .contacts .content .info {
-        padding: 60px 50px
-    }
-    .news .item .title h3 {
-        font-size: 17px
-    }
-    .news .item {
-        padding: 15px
-    }
-    .news .col-lg-3:nth-child(2n+2) {
-        margin-top: 50px
-    }
-    .news .col-lg-3:nth-child(2n+2) .info {
-        padding-top: 20px
-    }
-    .news.allSection .aboutCol {
-        padding: 30px 20px 45px
-    }
-   /* header nav {
-        padding-left: 30px
-    }*/
-    .slider .mainCell .text .title {
-        font-size: 50px
-    }
-    .slider .text a {
-        font-size: 18px
-    }
-    .header h2 {
-        font-size: 36px
-    }
-    .col-lg-6:first-child .text>img {
-        width: 150px;
-        margin-top: -20px;
-        margin-bottom: 10px
-    }
-    .aboutIndex .col-lg-6 .text .desc p {
-        font-size: 16px;
-        line-height: 28px
-    }
-    .more a {
-        margin-top: 30px
-    }
-    .aboutIndex .col-lg-6 .text .desc p {
-        line-height: 26px
-    }
-    .textSlider ol.flickity-page-dots {
-        bottom: -35px
-    }
-    .serviceIndex .text img {
-        margin-top: 10px
-    }
-    .bottomFooter .container-fluid,
-    footer .container-fluid {
-        padding: 0 120px
-    }
-    .allSection .container-fluid {
-        padding: 0 100px
-    }
-    .header h1 {
-        font-size: 50px
-    }
-    .partners .item .desc p {
-        font-size: 16px
-    }
-    .partners .item .partImg {
-        border-width: 10px
-    }
-    .allSection .aboutCol {
-        padding: 50px 70px
-    }
-    .aboutCol .desc p {
-        font-size: 19px;
-        line-height: 30px
-    }
-    .aboutCol .message {
-        width: 50%
-    }
-    .quota {
-        line-height: 50px
+@media (max-width:1475px) {
+    .number-link {
+        font-size: 11px;
     }
 }
 
@@ -2201,13 +2095,14 @@ img#arrowSelectBox0 {
         font-size: 14px
     }
     header .container-fluid {
-        padding: 0 50px
+        padding: 0 50px;
     }
     /*header nav {
         padding-left: 10px
     }*/
+    
     header nav ul li {
-        margin-right: 20px
+        display: none;
     }
     header nav ul li:last-child {
         margin: 0
@@ -2237,7 +2132,7 @@ img#arrowSelectBox0 {
         font-size: 45px
     }
 }
-@media (max-width: 1299px) and (min-width: 991px){
+@media (max-width: 1299px) and (min-width: 1299px){
 	header .col-lg-1 {
 	    flex: unset;
 	    max-width: 78px;
@@ -2461,7 +2356,7 @@ img#arrowSelectBox0 {
     }
 }
 
-@media (max-width:991px) {
+@media (max-width:1299px) {
 header .col-lg-4 {
     max-width: initial;
 }
